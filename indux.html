@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery | CodeAlpha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Image Gallery</h1>
+        
+        <!-- Category Filters -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">City</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400" alt="Nature 1">
+                <div class="overlay">
+                    <span class="title">Mountain Lake</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400" alt="Nature 2">
+                <div class="overlay">
+                    <span class="title">Forest Path</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400" alt="City 1">
+                <div class="overlay">
+                    <span class="title">City Skyline</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?w=400" alt="Animals 1">
+                <div class="overlay">
+                    <span class="title">Wild Deer</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="food">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400" alt="Food 1">
+                <div class="overlay">
+                    <span class="title">Gourmet Dish</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400" alt="Nature 3">
+                <div class="overlay">
+                    <span class="title">Sunset Valley</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=400" alt="City 2">
+                <div class="overlay">
+                    <span class="title">Night City</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1535241749838-299277b6305f?w=400" alt="Animals 2">
+                <div class="overlay">
+                    <span class="title">Cute Fox</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="food">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Food 2">
+                <div class="overlay">
+                    <span class="title">Pizza</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1440589473619-3cde28941638?w=400" alt="Nature 4">
+                <div class="overlay">
+                    <span class="title">Flower Field</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400" alt="City 3">
+                <div class="overlay">
+                    <span class="title">Downtown</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400" alt="Animals 3">
+                <div class="overlay">
+                    <span class="title">Elephant</span>
+                    <i class="fas fa-expand expand-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" id="close-lightbox">&times;</span>
+        <span class="prev-btn" id="prev-btn">&#10094;</span>
+        <span class="next-btn" id="next-btn">&#10095;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Lightbox Image">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
